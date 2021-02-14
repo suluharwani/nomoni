@@ -1,0 +1,350 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Verifikasi Data Peserta">
+    <meta name="author" content="WeeR INDONESIA">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Verifikasi Data Peserta (No. INVOICE)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h2>Verifikasi Data Peserta <code>No. INVOICE</code></h2>
+        <p class="lead">Mohon untuk periksa kembali biodata anda, jika terdapat kesalahan pada biodata anda silahkan ubah ke biodata anda yang benar. Kami berhak membatalkan peserta yang memiliki biodata yang tidak sesuai. Terima kasih.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Biaya Pendaftaran</span>
+            <span class="badge badge-secondary badge-pill">1</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Kategori Lomba</h6>
+                <small class="text-muted">10K RUN</small>
+              </div>
+              <span class="text-muted">IDR. 000.000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Kode Unik</h6>
+                <small class="text-success">Nomor Kode Unik</small>
+              </div>
+              <span class="text-success">IDR. 000</span>
+            </li>
+            <!--<li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>-->
+            <li class="list-group-item d-flex justify-content-between">
+              <div>
+                <h6 class="my-0"><strong>Total (IDR)</strong></h6>
+                <small class="text-danger">Bayar hingga 3 digit terakhir</small>
+              </div>
+              <strong>IDR. 000.000</strong>
+            </li>
+            <!--<li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>-->
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <!--<input type="text" class="form-control" placeholder="Promo code">-->
+              <select class="form-control">
+                <option selected disabled="">-- Pilih Ukuran Jersey --</option>
+                <option>Size S</option>
+                <option>Size M</option>
+                <option>Size L</option>
+                <option>Size XL</option>
+              </select>
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-success">Konfirmasi</button>
+              </div>
+            </div>
+          </form>
+          <small class="text-danger">Mohon untuk memeriksa kembali biodata anda. Jika sudah benar silahkan pilih <b>Ukuran Jersey</b> anda dan kemudian <b>Konfirmasi</b> untuk mencetak bukti pendaftaran anda. Terima kasih.</small>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Biodata Anda</h4>
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="noidentitas">No. Identitas <span class="text-muted">(KTP/Passport/SIM/Kartu Pelajar)</span></label>
+              <input type="text" class="form-control" id="noidentitas" placeholder="" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                No. Identitas is required.
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Nama Lengkap</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Nama Lengkap is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Nama NBIB</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Nama NBIB is required.
+                </div>
+              </div>
+            </div>
+
+            <!--<div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>-->
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid Email Address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="gender">Jenis Kelamin</label>
+              <select class="form-control" id="gender">
+                <option selected disabled value="">-- Jenis Kelamin --</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+              <div class="invalid-feedback">
+                Jenis Kelamin is required.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="tempat">Tempat Lahir</label>
+                <input type="text" class="form-control" id="tempat" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Tempat Lahir is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="tanggallahir">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="tanggallahir" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Tanggal Lahir is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Alamat</label>
+              <textarea class="form-control" id="address" placeholder="" required=""></textarea>
+              <div class="invalid-feedback">
+                Alamat is required.
+              </div>
+            </div>
+
+            <!--<div class="mb-3">
+              <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>-->
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="country">Kota/Kabupaten</label>
+                <input type="text" class="form-control" id="country" placeholder="" required="">
+                <div class="invalid-feedback">
+                 Kota/Kabupaten is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="state">Provinsi</label>
+                <input type="text" class="form-control" id="state" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Provinsi is required.
+                </div>
+              </div>
+              <!--<div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>-->
+            </div>
+
+            <div class="mb-3">
+              <label for="hp">No. Handphone</label>
+              <input type="text" class="form-control" id="hp" placeholder="" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                No. Handphone is required.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="hp2">No. Handphone Darurat <span class="text-muted">(bila terjadi sesuatu)</span></label>
+              <input type="text" class="form-control" id="hp2" placeholder="" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                No. Handphone Darurat is required.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="penyakit">Riwayat Penyakit <span class="text-muted">(optional)</span></label>
+              <input type="text" class="form-control" id="penyakit" placeholder="">
+              <!--<div class="invalid-feedback" style="width: 100%;">
+                Riwayat Penyakit is required.
+              </div>-->
+            </div>
+
+            <div class="mb-3">
+              <label for="komunitas">Komunitas <span class="text-muted">(optional)</span></label>
+              <input type="text" class="form-control" id="komunitas" placeholder="">
+              <!--<div class="invalid-feedback" style="width: 100%;">
+                Komunitas is required.
+              </div>-->
+            </div>
+
+            <div class="mb-3">
+              <label for="cot">Prediksi Waktu Sampai <span class="text-muted">(COT)</span></label>
+              <input type="time" class="form-control" id="cot" placeholder="" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                COT is required.
+              </div>
+            </div>
+
+            <!--<hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Save this information for next time</label>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Payment</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Credit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Debit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>-->
+            <hr class="mb-4">
+            <button class="btn btn-warning text-white btn-lg btn-block" type="submit">Edit Biodata</button>
+            <button class="btn btn-primary text-white btn-lg btn-block" type="submit">Simpan Biodata</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; Copyright 2018 Palu Nomoni. All Right Reserved.</p>
+        <p class="mb-1">Powered by. <a href="http://www.paluwebstore.com/" target="_blank">Paluwebstore</a> | Dev by. <a href="https://weer-indonesia.com/" target="_blank">WeeR INDONESIA</a></p>
+        <!--<ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>-->
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
